@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Test</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet"> 
+            <!-- <link href="css/bootstrap-table.css" rel="stylesheet">  -->
+
+        <link href="css/bootstrap-table.min.css" rel="stylesheet"> 
+
+    <!-- <link href="css/bootstrap_table.css" rel="stylesheet"> -->
+<script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- <script src="js/bootstrap-table.min.js"></script> -->
+<script src="js/bootstrap-table.js"></script>
+
+<!-- Latest compiled and minified CSS -->
+
+<!-- Latest compiled and minified JavaScript -->
+
+<!-- Latest compiled and minified Locales -->
+<!-- Documentation extras -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+
+
+
+  </head>
+  <body>
+
+
+
+       <div class="container">
+              <div class="page-header">
+                <h1>SRA</h1>
+<!--                 <p class="lead">Basic grid layouts to get you familiar with building within the Bootstrap grid system.</p>
+ -->           </div>
+
+
+
+              <div role="tabpanel">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+       <!--            <li role="presentation"  class="active" ><a href="#home" id="home-tab" aria-controls="home" role="tab" data-toggle="tab">Home</a></li> -->
+                  <li role="presentation"><a href="#profile"  id= "profile-tab" aria-controls="profile" role="tab" data-toggle="tab">Browse</a></li>
+                  <li role="presentation"  class="active" ><a href="#messages"  id= "messages-tab" aria-controls="messages" role="tab" data-toggle="tab">Search</a></li>
+                </ul>
+                <!-- Tab panes -->
+                <div class="tab-content">
+           <!--        <div role="tabpanel" class="tab-pane active" id="home" aria-labelledby ="home-tab">
+                    <h4> SRA Database ,the beginning of the project </h4>
+                  </div> -->
+
+                  <div role="tabpanel" class="tab-pane" id="profile" aria-labelledby="profile-tab">
+                               <h4>  browse the database</h4>
+                            <table data-toggle="table" data-url="data1.json" data-cache="false" data-height="500"  >
+                                <thead>
+                                    <tr>
+                                        <th data-field="id" data-align="right" data-sortable="true">Item ID</th>
+                                        <th data-field="name" data-align="center" data-sortable="true">Item Name</th>
+                                        <th data-field="price" data-sortable="true" data-sorter="priceSorter">Item Price</th>
+                                    </tr>
+
+                                </thead>
+                            </table>
+                   </div>
+
+
+                  <div role="tabpanel" class="tab-pane" id="messages" aria-labelledby="messages-tab">
+                        <h4> input the search words  </h4>
+                    <div class="row">
+                      <div class="col-lg-9">
+                          <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search for...">
+                            <span class="input-group-btn">
+                              <button class="btn btn-default" type="button">Go!</button>
+                            </span>
+                          </div><!-- /input-group -->
+                        </div><!-- /.col-lg-6 -->
+                  </div>  <!--/row-->
+
+
+                </div>
+
+
+
+      </div>
+  </body>
+
+</html>
